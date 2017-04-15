@@ -80,8 +80,8 @@ function init() {
   var onError = function(xhr) {}; 
 
   var mtlLoader = new THREE.MTLLoader();
- 	mtlLoader.load('camero-2010-low-poly.mtl', function(materials) {
 	mtlLoader.setPath('Resource/');
+ 	mtlLoader.load('camero-2010-low-poly.mtl', function(materials) {
     materials.preload();
 
     var objLoader = new THREE.OBJLoader();
